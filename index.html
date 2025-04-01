@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <title>Página de Inicio</title>
+</head>
+
+<body>
+
+    <header class="head">
+        <div class="logo">
+            <a href="index.html"><img src="img/nationalg.svg" alt="Logo"></a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="membres.html">Miembros</a>
+            <a href="projecte.html">Proyectos</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="contacte.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2 class="title">Les rutes més emblemàtiques del Camp de Tarragona</h2>
+        <p>Descubre proyectos increíbles y conoce a nuestro equipo de expertos.</p>
+        <div class="btn-home">
+            <a href="projecte.html" class="btn">Ver Rutas</a>
+            <a href="contacte.html" class="btn">Contáctanos</a>
+        </div>
+
+        <section class="carousel-container">
+            <div class="carousel">
+                <img src="img/La musara.jpg" class="carousel-item">
+                <img src="img/1.jpg" class="carousel-item">
+                <img src="img/2.jpg" class="carousel-item">
+                <img src="img/La teixeta.jpg" class="carousel-item">
+            </div>
+            <div class="progress-indicators">
+                <div class="progress-bar" id="bar1"></div>
+                <div class="progress-bar" id="bar2"></div>
+                <div class="progress-bar" id="bar3"></div>
+                <div class="progress-bar" id="bar4"></div>
+            </div>
+        </section>
+
+        <section class="cards-container">
+            <div class="card">
+                <h3>Explora nuestros proyectos</h3>
+                <p>En esta web compartimos rutas en bicicleta por nuestro territorio, pensadas para disfrutar tanto del deporte como del paisaje. Nuestro propósito es crear un espacio colaborativo donde ciclistas y ciudadanos puedan aportar ideas, proponer recorridos y ayudar a mejorar el catálogo de rutas disponibles. No tenemos ánimo de lucro: simplemente buscamos fomentar el ciclismo, descubrir el entorno y conectar a personas con la misma pasión por pedalear.</p>
+            </div>
+            <div class="card">
+                <h3>¿Quieres participar?</h3>
+                <p>Esta página está abierta a todos los ciclistas y amantes del territorio que quieran contribuir. Si tienes una ruta que crees que merece estar aquí, envíanosla. Nuestro equipo de ciclistas la valorará, comprobará que cumple unos parámetros básicos de calidad, seguridad y atractivo, y si supera la revisión, la publicaremos para que toda la comunidad pueda disfrutarla. Juntos hacemos crecer este proyecto y descubrimos nuevas formas de pedalear nuestro entorno.</p>
+            </div>
+        </section>
+
+        <h2 class="title">Donde nos encontramos</h2>
+        <div id="map" style="height: 500px;"></div>
+        <script>
+            var map = L.map('map').setView([41.1087, 1.1449], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        </script>
+    </main>
+
+
+
+    <footer class="footer">
+        <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Carrusel automático con barra de progreso
+        let carouselIndex = 0;
+        function showNextImage() {
+            let items = document.querySelectorAll(".carousel-item");
+            let progressBar = document.querySelector(".progress-bar");
+            items.forEach(item => item.style.display = "none");
+            carouselIndex = (carouselIndex + 1) % items.length;
+            items[carouselIndex].style.display = "block";
+            progressBar.style.width = `${(carouselIndex + 1) / items.length * 100}%`;
+        }
+        setInterval(showNextImage, 4000);
+        showNextImage();
+
+        // Agregar clase para animación al hacer scroll y ocultar al volver arriba
+        document.addEventListener("scroll", function() {
+            let cards = document.querySelectorAll(".card");
+            cards.forEach(card => {
+                let rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.75 && rect.bottom > 0) {
+                    card.classList.add("active");
+                } else {
+                    card.classList.remove("active");
+                }
+            });
+        });
+
+        // Mostrar aviso de cookies
+        document.addEventListener("DOMContentLoaded", function() {
+            let cookieConsent = document.getElementById("cookieConsent");
+            let acceptCookies = document.getElementById("acceptCookies");
+            
+            if (!localStorage.getItem("cookiesAccepted")) {
+                cookieConsent.style.display = "block";
+            }
+            
+            acceptCookies.addEventListener("click", function() {
+                localStorage.setItem("cookiesAccepted", "true");
+                cookieConsent.style.display = "none";
+            });
+        });
+        // Tarjetas expandibles
+        const footer = document.querySelector('.footer');
+      
+        window.addEventListener('scroll', () => {
+          const scrollPosition = window.scrollY + window.innerHeight;
+          const documentHeight = document.documentElement.scrollHeight;
+      
+          if (scrollPosition >= documentHeight - 10) {
+            footer.classList.remove('hidden'); // Muestra el footer cuando llegas abajo
+          } else {
+            footer.classList.add('hidden'); // Oculta cuando empiezas a subir
+          }
+        });
+    </script>
+
+
+</body>
+</html>
