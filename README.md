@@ -34,7 +34,7 @@ Per fer la web adaptativa a diferents dispositius (mòbil, tauleta, ordinador) s
 - **Unitats relatives (%, em, rem)** per evitar dissenys rígids
 - **Imatges amb resolució adequada** i amb propietats `max-width: 100%` per evitar desbordaments
 
-## 5. Cartografia
+## 5. Cartografia.
 
 Els mapes s’han integrat mitjançant la llibreria **Leaflet.js**. Els punts d’interès s’han afegit amb coordenades GPS, i s’han creat capes personalitzades amb estils propis per destacar la informació rellevant. També s’han utilitzat serveis WMS de l’ICGC per superposar cartografia real.
 
@@ -70,3 +70,8 @@ Projecte realitzat per: *[Nom de l'autor/a]*
 Assignatura de Geografia – *[Curs o institut]*  
 Data: *[Data de lliurament]*
 
+<<<<<<< HEAD
+=======
+# Web-test
+Una Web de la URV
+>>>>>>> acc3d59d2d46b69ecabbe7be243b5f970c0b5cf5
