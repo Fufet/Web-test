@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <title>Mapa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Estils -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <title>Mapa</title>
 </head>
-<body>
+<body class="w3-light-grey">
 
-    <header class="head">
-        <div class="logo">
-            <a href="index.html"><img src="img/nationalg.svg" alt="Logo"></a>
-        </div>
-        <nav class="navbar">
-            <a href="index.html">Inicio</a>
-            <a href="membres.html">Miembros</a>
-            <a href="projecte.html">Proyectos</a>
-            <a href="mapa.html">Mapa</a>
-            <a href="contacte.html">Contacto</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="w3-bar w3-blue-gray w3-padding w3-card-4">
+    <div class="w3-bar-item">
+      <a href="index.html">
+        <img src="img/nationalg.svg" alt="Logo" style="height: 50px;">
+      </a>
+    </div>
+    <nav class="w3-bar-item w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
+      <a href="membres.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
+      <a href="projecte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Proyectos</strong></a>
+      <a href="mapa.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
+      <a href="contacte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Contacto</strong></a>
+    </nav>
+  </header>
 
-    <main class="content">
-        <h2 class="title">Donde nos encontramos</h2>
-        <div id="map" style="height: 500px;"></div>
-        <script>
-            var map = L.map('map').setView([41.1087, 1.1449], 13);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-        </script>
-    </main>
+  <!-- Contingut -->
+  <main class="w3-container w3-margin-top">
+    <h2 class="w3-center w3-xxlarge">Dónde nos encontramos</h2>
+    
+    <div class="w3-card w3-white w3-round-large w3-margin-top" style="overflow: hidden;">
+      <div id="map" style="height: 500px;"></div>
+    </div>
 
-      
+    <script>
+      var map = L.map('map').setView([41.1087, 1.1449], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    </script>
+  </main>
 
-    <footer class="footer">
-        <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="w3-container w3-blue-gray w3-center w3-padding-16 w3-margin-top">
+    <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

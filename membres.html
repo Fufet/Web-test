@@ -1,96 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Miembros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Framework W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- Estils personalitzats (si tens) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Miembros</title>
 </head>
-<body>
+<body class="w3-light-grey">
 
-    <header class="head">
-        <div class="logo">
-            <a href="index.html"><img src="img/nationalg.svg" alt="Logo"></a>
+  <!-- Header -->
+  <header class="w3-bar w3-blue-gray w3-padding w3-card-4">
+    <div class="w3-bar-item">
+      <a href="index.html">
+        <img src="img/nationalg.svg" alt="Logo" style="height: 50px;">
+      </a>
+    </div>
+    <nav class="w3-bar-item w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
+      <a href="membres.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
+      <a href="projecte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Proyectos</strong></a>
+      <a href="mapa.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
+      <a href="contacte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Contacto</strong></a>
+    </nav>
+  </header>
+
+  <!-- Contingut principal -->
+  <main class="w3-container w3-center w3-margin-top">
+    <h2 class="w3-xxlarge">Nuestro Equipo</h2>
+    <p>Conoce a los miembros de nuestro equipo.</p>
+
+    <!-- Contenedor flexible per les targetes -->
+    <div class="w3-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+
+      <!-- Targeta Diana -->
+      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
+        <img src="img/diana.jpg" alt="Diana Maria" style="width:100%" class="w3-round-large">
+        <div class="w3-container">
+          <h3>Diana Maria</h3>
+          <p class="w3-opacity">Trabajo de campo y coordinación</p>
+          <div class="card-extra w3-hide">
+            <h4>Sobre Diana</h4>
+            <p>Diana se encarga de coordinar las salidas y gestionar los datos recogidos en campo.</p>
+          </div>
         </div>
-        <nav class="navbar">
-            <a href="index.html">Inicio</a>
-            <a href="membres.html">Miembros</a>
-            <a href="projecte.html">Proyectos</a>
-            <a href="mapa.html">Mapa</a>
-            <a href="contacte.html">Contacto</a>
-        </nav>
-    </header>
+      </div>
 
-    <main class="content">
-        <h2 class="title">Nuestro Equipo</h2>
-        <p>Conoce a los miembros de nuestro equipo.</p>
-
-        <div class="team-container">
-
-            <div class="team-card">
-              <img src="img/diana.jpg">
-              <h3>Diana Maria</h3>
-              <p>Trabajo de campo y coordinación</p>
-              <div class="card-extra">
-                <h4>Sobre Diana</h4>
-                <p>Diana se encarga de coordinar las salidas y gestionar los datos recogidos en campo, asegurando la calidad del proyecto.</p>
-              </div>
-            </div>
-
-            <div class="team-card">
-              <img src="img/josep.jpg">
-              <h3>Josep Francesc</h3>
-              <p>CEO</p>
-              <div class="card-extra">
-                <h4>Sobre Josep</h4>
-                <p>Josep lidera el equipo, coordina las tareas y define las estrategias del proyecto para lograr los objetivos marcados.</p>
-              </div>
-            </div>
-
-            <div class="team-card">
-              <img src="img/dani.jpg">
-              <h3>Dani Monfort</h3>
-              <p>Empleado a tiempo parcial</p>
-              <div class="card-extra">
-                <h4>Sobre Dani</h4>
-                <p>Dani colabora en la recolección de datos y apoya en tareas técnicas del análisis cartográfico.</p>
-              </div>
-            </div>
-
+      <!-- Targeta Josep -->
+      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
+        <img src="img/josep.jpg" alt="Josep Francesc" style="width:100%" class="w3-round-large">
+        <div class="w3-container">
+          <h3>Josep Francesc</h3>
+          <p class="w3-opacity">CEO</p>
+          <div class="card-extra w3-hide">
+            <h4>Sobre Josep</h4>
+            <p>Josep lidera el equipo, coordina tareas y define estrategias del proyecto.</p>
+          </div>
         </div>
+      </div>
 
-    <footer class="footer">
-        <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-    </footer>
+      <!-- Targeta Dani -->
+      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
+        <img src="img/dani.jpg" alt="Dani Monfort" style="width:100%" class="w3-round-large">
+        <div class="w3-container">
+          <h3>Dani Monfort</h3>
+          <p class="w3-opacity">Empleado a tiempo parcial</p>
+          <div class="card-extra w3-hide">
+            <h4>Sobre Dani</h4>
+            <p>Dani colabora en la recolección de datos y apoya en tareas técnicas del análisis cartográfico.</p>
+          </div>
+        </div>
+      </div>
 
-    <!-- Script para expandir tarjetas -->
-    <script>
-      const cards = document.querySelectorAll('.team-card');
+    </div>
+  </main>
 
-      cards.forEach(card => {
-        card.addEventListener('click', () => {
-          card.classList.toggle('active');
-        });
+  <!-- Footer -->
+  <footer class="w3-container w3-blue-gray w3-center w3-padding-16 footer">
+    <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script per expandir targetes -->
+  <script>
+    const cards = document.querySelectorAll('.team-card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const extra = card.querySelector('.card-extra');
+        extra.classList.toggle('w3-hide');
       });
-    </script>
+    });
+  </script>
 
-    <!-- Script para ocultar footer al subir -->
-    <script>
-      const footer = document.querySelector('.footer');
+  <!-- Script per ocultar el footer al pujar -->
+  <script>
+    const footer = document.querySelector('.footer');
 
-      window.addEventListener('scroll', () => {
-        const scrollPosition = window.scrollY + window.innerHeight;
-        const documentHeight = document.documentElement.scrollHeight;
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
 
-        if (scrollPosition >= documentHeight - 10) {
-          footer.classList.remove('hidden'); // Mostrar footer al llegar abajo
-        } else {
-          footer.classList.add('hidden'); // Ocultar al subir
-        }
-      });
-    </script>
-
-    
+      if (scrollPosition >= documentHeight - 10) {
+        footer.classList.remove('w3-hide');
+      } else {
+        footer.classList.add('w3-hide');
+      }
+    });
+  </script>
 
 </body>
 </html>

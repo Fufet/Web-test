@@ -89,21 +89,33 @@ body {
 
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 40px; /* O la altura que prefieras */
-    background: rgba(109, 163, 193, 0.8);
+    position: relative; /* 🔑 Afegeix això aquí! */
+    background: rgba(109, 163, 193, 0.9);
     color: rgb(0, 0, 0);
-    padding: 0 1rem; /* Ajusta solo los laterales si quieres */
-    display: flex; /* ⭐️ Activamos flex */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    padding: 6px 20px;
     text-align: center;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    font-size: 14px; /* Puedes ajustar el tamaño del texto también */
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
 }
+
+
+@media (min-height: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+
+
+}
+
+
 
 
 
@@ -401,7 +413,7 @@ body {
   .team-card {
     background: rgba(255, 255, 255, 0.9);
     color: black;
-    border-radius: 10px;
+    border-radius: 10px;a
     padding: 20px;
     width: 250px;
     text-align: center;
