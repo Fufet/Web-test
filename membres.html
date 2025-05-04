@@ -102,14 +102,20 @@
   </script>
 
   <!-- Script per ocultar el footer quan es fa scroll -->
-  <script>
-    const footer = document.querySelector('.footer');
-    window.addEventListener('scroll', () => {
-      const scrollPosition = window.scrollY + window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      footer.classList.toggle('w3-hide', scrollPosition < documentHeight - 10);
+ <script>
+  const cards = document.querySelectorAll('.team-card');
+
+  cards.forEach(card => {
+    const btn = card.querySelector('.toggle-btn');
+    const extra = card.querySelector('.card-extra');
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      extra.classList.toggle('w3-hide');
+      btn.textContent = extra.classList.contains('w3-hide') ? 'Ver más' : 'Ver menos';
     });
-  </script>
+  });
+</script>
 
 </body>
 </html>
