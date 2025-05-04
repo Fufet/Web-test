@@ -489,12 +489,13 @@ L.Control.geocoder({ defaultMarkGeocode: true }).addTo(map);
             pane: 'pane_Inicidelaruta_5',
             onEachFeature: pop_Inicidelaruta_5,
             pointToLayer: function (feature, latlng) {
-                var context = {
-                    feature: feature,
-                    variables: {}
-                };
-                return L.circleMarker(latlng, style_Inicidelaruta_5_0(feature));
-            },
+    var bikeIcon = L.icon({
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Bicycle_icon.png',
+        iconSize: [30, 30],
+        iconAnchor: [15, 15],
+    });
+    return L.marker(latlng, { icon: bikeIcon });
+},
         });
         var cluster_Inicidelaruta_5 = new L.MarkerClusterGroup({showCoverageOnHover: false,
             spiderfyDistanceMultiplier: 2});
