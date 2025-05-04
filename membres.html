@@ -7,7 +7,7 @@
   <!-- Framework W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
-  <!-- Estils personalitzats (opcional) -->
+  <!-- Estils personalitzats -->
   <link rel="stylesheet" href="css/style.css">
 
   <title>Miembros</title>
@@ -35,7 +35,6 @@
     <h2 class="w3-xxlarge">Nuestro Equipo</h2>
     <p>Conoce a los miembros de nuestro equipo.</p>
 
-    <!-- Contenedor de targetes -->
     <div class="w3-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
 
       <!-- Diana -->
@@ -88,22 +87,19 @@
     <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Script desplegable -->
+  <script>
+    const cards = document.querySelectorAll('.team-card');
 
-  <!-- Script per ocultar el footer quan es fa scroll -->
-<script>
-  const cards = document.querySelectorAll('.team-card');
-
-  cards.forEach(card => {
-    const btn = card.querySelector('.toggle-btn');
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      card.classList.toggle('active');
-      btn.textContent = card.classList.contains('active') ? 'Ver menos' : 'Ver más';
+    cards.forEach(card => {
+      const btn = card.querySelector('.toggle-btn');
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        card.classList.toggle('active');
+        btn.textContent = card.classList.contains('active') ? 'Ver menos' : 'Ver más';
+      });
     });
-  });
-</script>
-
-
+  </script>
 
 </body>
 </html>
