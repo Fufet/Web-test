@@ -91,7 +91,7 @@ legend.onAdd = function (map) {
     div.innerHTML += '<i style="background: rgba(183,72,75,1.0)"></i> Pallaresos-Ermita<br>';
     div.innerHTML += '<i style="background: rgba(64, 64, 64, 1.0)"></i> Mont-roig - Tivissa<br>';
     div.innerHTML += '<i style="background: rgba(255, 0, 0, 1.0)"></i> Fontaubella<br>';
-    div.innerHTML += '<i style="background: rgba(213,180,60,1.0); border-radius: 50%"></i> Inici de ruta<br>';
+   div.innerHTML += '<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Bicycle_icon.png" style="width: 18px; height: 18px; margin-right: 8px;"> Inici de ruta<br>';
     return div;
 };
 
@@ -195,18 +195,19 @@ L.Control.geocoder({ defaultMarkGeocode: true }).addTo(map);
         }
 
         function style_toromanmiamimussaramiami1tracks_1_0() {
-            return {
-                pane: 'pane_toromanmiamimussaramiami1tracks_1',
-                opacity: 1,
-                color: 'rgba(190,207,80,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 3.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
+    return {
+        pane: 'pane_toromanmiamimussaramiami1tracks_1',
+        opacity: 1,
+        color: 'rgba(255, 165, 0, 1.0)',  // Taronja
+        dashArray: '',
+        lineCap: 'square',
+        lineJoin: 'bevel',
+        weight: 3.0,
+        fillOpacity: 0,
+        interactive: false,
+    }
+}
+
         map.createPane('pane_toromanmiamimussaramiami1tracks_1');
         map.getPane('pane_toromanmiamimussaramiami1tracks_1').style.zIndex = 401;
         map.getPane('pane_toromanmiamimussaramiami1tracks_1').style['mix-blend-mode'] = 'normal';
@@ -268,18 +269,19 @@ L.Control.geocoder({ defaultMarkGeocode: true }).addTo(map);
         }
 
         function style_pallaresosermitasantantonidepaduaalbinyanapallaresos1tracks_2_0() {
-            return {
-                pane: 'pane_pallaresosermitasantantonidepaduaalbinyanapallaresos1tracks_2',
-                opacity: 1,
-                color: 'rgba(183,72,75,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 3.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
+    return {
+        pane: 'pane_pallaresosermitasantantonidepaduaalbinyanapallaresos1tracks_2',
+        opacity: 1,
+        color: 'rgba(183,72,75,1.0)',  // Vermell apagat
+        dashArray: '',
+        lineCap: 'square',
+        lineJoin: 'bevel',
+        weight: 3.0,
+        fillOpacity: 0,
+        interactive: false,
+    }
+}
+
         map.createPane('pane_pallaresosermitasantantonidepaduaalbinyanapallaresos1tracks_2');
         map.getPane('pane_pallaresosermitasantantonidepaduaalbinyanapallaresos1tracks_2').style.zIndex = 402;
         map.getPane('pane_pallaresosermitasantantonidepaduaalbinyanapallaresos1tracks_2').style['mix-blend-mode'] = 'normal';
@@ -341,18 +343,18 @@ L.Control.geocoder({ defaultMarkGeocode: true }).addTo(map);
         }
 
         function style_20240623montroigtivissamoradebre3castillosmiravettracks_3_0() {
-            return {
-                pane: 'pane_20240623montroigtivissamoradebre3castillosmiravettracks_3',
-                opacity: 1,
-                color: 'rgba(213,180,60,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 3.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
+    return {
+        pane: 'pane_20240623montroigtivissamoradebre3castillosmiravettracks_3',
+        opacity: 1,
+        color: 'rgba(64, 64, 64, 1.0)',  // Gris fosc
+        dashArray: '',
+        lineCap: 'square',
+        lineJoin: 'bevel',
+        weight: 3.0,
+        fillOpacity: 0,
+        interactive: false,
+    }
+}
         map.createPane('pane_20240623montroigtivissamoradebre3castillosmiravettracks_3');
         map.getPane('pane_20240623montroigtivissamoradebre3castillosmiravettracks_3').style.zIndex = 403;
         map.getPane('pane_20240623montroigtivissamoradebre3castillosmiravettracks_3').style['mix-blend-mode'] = 'normal';
@@ -414,18 +416,18 @@ L.Control.geocoder({ defaultMarkGeocode: true }).addTo(map);
         }
 
         function style_latorredefontaubellatracks_4_0() {
-            return {
-                pane: 'pane_latorredefontaubellatracks_4',
-                opacity: 1,
-                color: 'rgba(141,90,153,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 3.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
+    return {
+        pane: 'pane_latorredefontaubellatracks_4',
+        opacity: 1,
+        color: 'rgba(255, 0, 0, 1.0)',  // Vermell intens
+        dashArray: '',
+        lineCap: 'square',
+        lineJoin: 'bevel',
+        weight: 3.0,
+        fillOpacity: 0,
+        interactive: false,
+    }
+}
         map.createPane('pane_latorredefontaubellatracks_4');
         map.getPane('pane_latorredefontaubellatracks_4').style.zIndex = 404;
         map.getPane('pane_latorredefontaubellatracks_4').style['mix-blend-mode'] = 'normal';
