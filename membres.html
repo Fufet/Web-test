@@ -95,15 +95,14 @@
 
   cards.forEach(card => {
     const btn = card.querySelector('.toggle-btn');
-    const extra = card.querySelector('.card-extra');
-
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      extra.classList.toggle('show');
-      btn.textContent = extra.classList.contains('show') ? 'Ver menos' : 'Ver más';
+      card.classList.toggle('active');
+      btn.textContent = card.classList.contains('active') ? 'Ver menos' : 'Ver más';
     });
   });
 </script>
+
 
 
 </body>
