@@ -90,7 +90,7 @@
 
 
   <!-- Script per ocultar el footer quan es fa scroll -->
- <script>
+<script>
   const cards = document.querySelectorAll('.team-card');
 
   cards.forEach(card => {
@@ -99,11 +99,12 @@
 
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      extra.classList.toggle('w3-hide');
-      btn.textContent = extra.classList.contains('w3-hide') ? 'Ver más' : 'Ver menos';
+      extra.classList.toggle('show');
+      btn.textContent = extra.classList.contains('show') ? 'Ver menos' : 'Ver más';
     });
   });
 </script>
+
 
 </body>
 </html>
