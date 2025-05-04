@@ -7,7 +7,7 @@
   <!-- Framework W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
-  <!-- Estils personalitzats (si tens) -->
+  <!-- Estils personalitzats (opcional) -->
   <link rel="stylesheet" href="css/style.css">
 
   <title>Miembros</title>
@@ -35,15 +35,16 @@
     <h2 class="w3-xxlarge">Nuestro Equipo</h2>
     <p>Conoce a los miembros de nuestro equipo.</p>
 
-    <!-- Contenedor flexible per les targetes -->
+    <!-- Contenedor de targetes -->
     <div class="w3-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
 
-      <!-- Targeta Diana -->
+      <!-- Diana -->
       <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
         <img src="img/diana.jpg" alt="Diana Maria" style="width:100%" class="w3-round-large">
         <div class="w3-container">
           <h3>Diana Maria</h3>
           <p class="w3-opacity">Trabajo de campo y coordinación</p>
+          <button class="w3-button w3-block w3-blue-gray toggle-btn">Ver más</button>
           <div class="card-extra w3-hide">
             <h4>Sobre Diana</h4>
             <p>Diana se encarga de coordinar las salidas y gestionar los datos recogidos en campo.</p>
@@ -51,12 +52,13 @@
         </div>
       </div>
 
-      <!-- Targeta Josep -->
+      <!-- Josep -->
       <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
         <img src="img/josep.jpg" alt="Josep Francesc" style="width:100%" class="w3-round-large">
         <div class="w3-container">
           <h3>Josep Francesc</h3>
           <p class="w3-opacity">CEO</p>
+          <button class="w3-button w3-block w3-blue-gray toggle-btn">Ver más</button>
           <div class="card-extra w3-hide">
             <h4>Sobre Josep</h4>
             <p>Josep lidera el equipo, coordina tareas y define estrategias del proyecto.</p>
@@ -64,12 +66,13 @@
         </div>
       </div>
 
-      <!-- Targeta Dani -->
+      <!-- Dani -->
       <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
         <img src="img/dani.jpg" alt="Dani Monfort" style="width:100%" class="w3-round-large">
         <div class="w3-container">
           <h3>Dani Monfort</h3>
           <p class="w3-opacity">Empleado a tiempo parcial</p>
+          <button class="w3-button w3-block w3-blue-gray toggle-btn">Ver más</button>
           <div class="card-extra w3-hide">
             <h4>Sobre Dani</h4>
             <p>Dani colabora en la recolección de datos y apoya en tareas técnicas del análisis cartográfico.</p>
@@ -85,33 +88,29 @@
     <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script per expandir targetes -->
+  <!-- Script per desplegar informació -->
   <script>
-    const cards = document.querySelectorAll('.team-card');
-
-    cards.forEach(card => {
-      card.addEventListener('click', () => {
-        const extra = card.querySelector('.card-extra');
+    const buttons = document.querySelectorAll('.toggle-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const extra = btn.nextElementSibling;
         extra.classList.toggle('w3-hide');
+        btn.textContent = extra.classList.contains('w3-hide') ? 'Ver más' : 'Ver menos';
       });
     });
   </script>
 
-  <!-- Script per ocultar el footer al pujar -->
+  <!-- Script per ocultar el footer quan es fa scroll -->
   <script>
     const footer = document.querySelector('.footer');
-
     window.addEventListener('scroll', () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
-
-      if (scrollPosition >= documentHeight - 10) {
-        footer.classList.remove('w3-hide');
-      } else {
-        footer.classList.add('w3-hide');
-      }
+      footer.classList.toggle('w3-hide', scrollPosition < documentHeight - 10);
     });
   </script>
 
 </body>
 </html>
+
