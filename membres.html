@@ -86,17 +86,15 @@
 
   <!-- Script desplegable -->
   <script>
-    const cards = document.querySelectorAll('.team-card');
+  const cards = document.querySelectorAll('.team-card');
 
-    cards.forEach(card => {
-      const btn = card.querySelector('.toggle-btn');
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        card.classList.toggle('active');
-        btn.textContent = card.classList.contains('active') ? 'Ver menos' : 'Ver más';
-      });
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
     });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>
