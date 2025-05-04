@@ -88,18 +88,6 @@
     <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script per desplegar informació -->
-  <script>
-    const buttons = document.querySelectorAll('.toggle-btn');
-    buttons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const extra = btn.nextElementSibling;
-        extra.classList.toggle('w3-hide');
-        btn.textContent = extra.classList.contains('w3-hide') ? 'Ver más' : 'Ver menos';
-      });
-    });
-  </script>
 
   <!-- Script per ocultar el footer quan es fa scroll -->
  <script>
