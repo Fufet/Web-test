@@ -98,5 +98,27 @@
     }
   </script>
 
+  <!-- Boto Scroll -->
+  <button onclick="scrollToTop()" id="scrollBtn" class="w3-button w3-blue w3-xlarge w3-circle w3-hover-opacity">↑</button>
+
+  <!-- Mostrar el botó quan es fa scroll -->
+  <script>
+    window.onscroll = function() { toggleScrollBtn() };
+
+    function toggleScrollBtn() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("scrollBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollBtn").style.display = "none";
+      }
+    }
+
+    // Funció per desplaçar-se cap a dalt
+    function scrollToTop() {
+      document.body.scrollTop = 0; // Per Safari
+      document.documentElement.scrollTop = 0; // Per Chrome, Firefox, IE i Opera
+    }
+  </script>
+
 </body>
 </html>
