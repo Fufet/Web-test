@@ -483,15 +483,6 @@ body {
 
 
 
-.social-icons img {
-  width: 100px; /* Ajusta la mida a la que vulguis */
-  height: auto; /* Manté les proporcions de les imatges */
-  border-radius: 10px; /* Afegir unes vores arrodonides (opcional) */
-  transition: transform 0.3s ease; /* Afegir transició per a efectes visuals */
-}
 
-.social-icons img:hover {
-  transform: scale(1.05); /* Efecte per augmentar lleugerament l'icona en passar el ratolí */
-}
 
 
