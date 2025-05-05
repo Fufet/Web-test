@@ -121,6 +121,25 @@
     </div>
   </main>
 
+   <!-- Mostrar el botó quan es fa scroll -->
+<script>
+  window.onscroll = function() { toggleScrollBtn() };
+
+  function toggleScrollBtn() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("scrollBtn").style.display = "block";
+    } else {
+      document.getElementById("scrollBtn").style.display = "none";
+    }
+  }
+
+  // Funció per desplaçar-se cap a dalt
+  function scrollToTop() {
+    document.body.scrollTop = 0; // Per Safari
+    document.documentElement.scrollTop = 0; // Per Chrome, Firefox, IE i Opera
+  }
+</script>
+
   <!-- Footer -->
   <footer class="w3-container w3-blue-gray w3-center w3-padding-16">
     <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
