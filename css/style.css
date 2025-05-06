@@ -549,38 +549,4 @@ p {
 
 
 
-/* Amagar el menú de navegació per defecte en dispositius mòbils */
-.w3-bar-item {
-  display: block; /* Fes que els elements del menú siguin de tipus bloc per facilitar el disseny vertical */
-}
-
-/* Amagar el menú en dispositius petits per defecte */
-.w3-bar-block {
-  display: none;
-}
-
-/* Mostrar el menú quan la classe 'w3-show' es troba present */
-.w3-bar-block.w3-show {
-  display: block;
-}
-
-/* Estils per al botó de menú (hamburguesa) en dispositius petits */
-.w3-button.w3-xlarge {
-  font-size: 30px;
-  padding: 10px;
-}
-
-/* Responsivitat: Menú en dispositius petits */
-@media (max-width: 768px) {
-  /* Mostrar el botó de menú hamburguesa en dispositius mòbils */
-  .w3-hide-small {
-    display: none !important; /* Amaga el menú en dispositius petits */
-  }
-
-  .w3-hide-large, .w3-hide-medium {
-    display: block !important; /* Mostra el botó hamburguesa */
-  }
-}
-
-
 
