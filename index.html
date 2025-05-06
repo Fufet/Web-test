@@ -19,39 +19,20 @@
 <body class="w3-light-grey">
 
   <!-- Header aplicat amb W3.CSS -->
-<header class="w3-bar w3-blue-gray w3-padding w3-card-4">
-  <div class="w3-bar-item">
-    <a href="index.html">
-      <img src="img/nationalg.svg" alt="Logo" style="height: 50px;">
-    </a>
-  </div>
-
-  <!-- Menú de navegació -->
-  <nav class="w3-bar-item w3-right w3-hide-small w3-bar-block">
-    <a href="index.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
-    <a href="membres.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
-    <a href="projecte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Proyectos</strong></a>
-    <a href="mapa.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
-    <a href="contacte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Contacto</strong></a>
-  </nav>
-
-  <!-- Botó de menú per a dispositius petits -->
-  <button class="w3-button w3-right w3-bar-item w3-hide-large w3-hide-medium w3-xlarge" onclick="toggleNav()">
-    <i class="fa fa-bars"></i>
-  </button>
-</header>
-
-<script>
-  // Funció per mostrar el menú en dispositius petits
-  function toggleNav() {
-    var x = document.getElementsByClassName("w3-bar-block")[0];
-    if (x.className.indexOf("w3-show") === -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-</script>
+  <header class="w3-bar w3-blue-gray w3-padding w3-card-4">
+    <div class="w3-bar-item">
+      <a href="index.html">
+        <img src="img/nationalg.svg" alt="Logo" style="height: 50px;">
+      </a>
+    </div>
+    <nav class="w3-bar-item w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
+      <a href="membres.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
+      <a href="projecte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Proyectos</strong></a>
+      <a href="mapa.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
+      <a href="contacte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Contacto</strong></a>
+    </nav>
+  </header>
 
   
   <main class="w3-container w3-margin-top">
