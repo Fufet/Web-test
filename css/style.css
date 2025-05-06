@@ -14,9 +14,9 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none; /* Inicialment amagat */
-  z-index: 1000; /* Augmentem el z-index per assegurar-nos que el botó es mostri per sobre del mapa */
-  font-size: 30px; /* Per fer-lo més gran */
+  display: none; 
+  z-index: 1000; 
+  font-size: 30px; 
   padding: 15px 20px;
   border-radius: 50%;
   cursor: pointer;
@@ -25,7 +25,7 @@ body {
 }
 
 #scrollBtn:hover {
-  opacity: 0.7; /* Efecte hover per a una millor visibilitat */
+  opacity: 0.7; 
 }
 
 
@@ -36,11 +36,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    height: 40px; /* Ajusta si quieres más alto o más bajo */
-    background: rgba(109, 163, 193, 0.9); /* Color con transparencia opcional */
-    width: 100%; /* 🔑 Ocupa todoel ancho */
-    margin: 0; /* 🔑 Quita márgenes */
-    border-radius: 0; /* 🔑 Quita bordes redondeados */
+    height: 40px; 
+    background: rgba(109, 163, 193, 0.9); 
+    width: 100%; 
+    margin: 0; 
+    border-radius: 0; 
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -50,7 +50,7 @@ body {
 
 
 .logo-img {
-    width: 100px; /* Ajusta el tamaño que prefieras */
+    width: 100px; 
 }
 
 
@@ -109,7 +109,7 @@ body {
 
 
 .footer {
-    position: relative; /* 🔑 Afegeix això aquí! */
+    position: relative; 
     background: rgba(109, 163, 193, 0.9);
     color: rgb(0, 0, 0);
     padding: 6px 20px;
@@ -394,19 +394,19 @@ body {
 
   .anuncios-container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    flex-wrap: wrap; /* Permite que bajen si no caben */
-    gap: 20px; /* Espacio entre anuncios */
-    width: 100vw; /* Ocupa todo el ancho de la pantalla */
-    height: 60vh; /* Ocupa toda la altura de la pantalla */
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    width: 100vw; 
+    height: 60vh; 
     padding: 20px;
-    background: rgba(0, 0, 0, 0.6); /* Fondo opcional */
+    background: rgba(0, 0, 0, 0.6); 
     box-sizing: border-box;
   }
   
   .anuncio {
-    width: 250px; /* Tamaño fijo de cada anuncio */
+    width: 250px; 
     padding: 10px;
     background: rgba(173, 216, 230, 0.9);
     border-radius: 10px;
@@ -442,11 +442,11 @@ body {
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    max-height: 350px; /* Altura cerrada */
+    max-height: 350px; 
   }
   
   .team-card.active {
-    max-height: 600px; /* Altura expandida */
+    max-height: 600px; 
   }
   
   .card-extra {
@@ -459,13 +459,13 @@ body {
   
   .team-card.active .card-extra {
     opacity: 1;
-    max-height: 200px; /* Ajusta según contenido */
+    max-height: 200px; 
   }
   
   .content {
     padding: 100px 20px;
-    max-width: 1200px; /* 🔑 Controla el ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 
@@ -477,7 +477,7 @@ body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     line-height: 1.2;
     margin: 0 auto 30px;
-    max-width: 90%; /* 🔑 Evita que el texto largo se descontrole */
+    max-width: 90%; 
     text-align: center;
 }
 
@@ -486,27 +486,27 @@ body {
 
 /* Estils per a les targetes de la secció */
 section .w3-card, .w3-card {
-    background-color: rgba(173, 216, 230, 0.9); /* Fons blau clar amb opacitat */
-    border-radius: 10px; /* Vores arrodonides */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra de la targeta */
-    padding: 20px; /* Afegir espai dins de la targeta */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animació al passar el ratolí */
+    background-color: rgba(173, 216, 230, 0.9); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 
 section .w3-card:hover {
-    transform: scale(1.05); /* Efecte d'ampliació al passar el ratolí */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Augmentar l'ombra al passar el ratolí */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
 section h3 {
-    font-size: 24px; /* Mida de la font del títol */
-    color: #333; /* Color de text del títol */
+    font-size: 24px; 
+    color: #333; 
 }
 
 section p {
-    font-size: 16px; /* Mida de la font del text */
-    color: #555; /* Color del text */
+    font-size: 16px;
+    color: #555; 
 }
 
 
