@@ -514,7 +514,7 @@ section p {
 /* Estil per al títol <h2> */
 h2 {
   text-align: center;          /* Centra el títol */
-  font-size: 48px;             /* Mida de font gran per al títol */
+  font-size: 30px;             /* Mida de font gran per al títol */
   font-weight: bold;           /* Fa el títol en negreta */
   margin-top: 40px;            /* Afegim espai superior per separar-lo del contingut anterior */
   color: #333;                 /* Color fosc per al títol */
