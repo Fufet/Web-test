@@ -484,4 +484,30 @@ body {
 
 
 
+/* Estils per a les targetes de la secció */
+section .w3-card {
+    background-color: rgba(173, 216, 230, 0.9); /* Fons blau clar amb opacitat */
+    border-radius: 10px; /* Vores arrodonides */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra de la targeta */
+    padding: 20px; /* Afegir espai dins de la targeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animació al passar el ratolí */
+}
+
+section .w3-card:hover {
+    transform: scale(1.05); /* Efecte d'ampliació al passar el ratolí */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Augmentar l'ombra al passar el ratolí */
+}
+
+section h3 {
+    font-size: 24px; /* Mida de la font del títol */
+    color: #333; /* Color de text del títol */
+}
+
+section p {
+    font-size: 16px; /* Mida de la font del text */
+    color: #555; /* Color del text */
+}
+
+
+
 
