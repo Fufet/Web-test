@@ -514,14 +514,4 @@ section p {
 
 
 
-/* Amagar el menú per defecte en dispositius petits */
-.w3-bar-block {
-  display: none;
-}
-
-/* Mostrar el menú quan s'aplica la classe 'w3-show' */
-.w3-bar-block.w3-show {
-  display: block;
-}
-
 
