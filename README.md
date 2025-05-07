@@ -28,9 +28,7 @@ Per fer la web adaptativa a diferents dispositius (mòbil, tauleta, ordinador) s
 - **Media Queries en CSS** per canviar el disseny segons la mida de pantalla
 - **Unitats relatives (%, em, rem)** per evitar dissenys rígids
 - **Imatges amb resolució adequada** i amb propietats `max-width: 100%` per evitar desbordaments
-- Menú adaptat per a dispositius mòbils: Per fer que el menú de navegació funcioni correctament en dispositius petits com els mòbils, he afegit un botó tipus "hamburguesa" (☰) que apareix només en pantalles petites gràcies a les classes w3-hide-large i w3-hide-medium de W3.CSS.
-
-Quan l’usuari fa clic en aquest botó, s’executa una funció JavaScript (toggleMenu()) que mostra o amaga un menú vertical ocult per defecte (#mobileMenu) amb les mateixes opcions de navegació que el menú principal.
+- Menú adaptat per a dispositius mòbils: Per fer que el menú de navegació funcioni correctament en dispositius petits com els mòbils, he afegit un botó tipus "hamburguesa" (☰) que apareix només en pantalles petites gràcies a les classes w3-hide-large i w3-hide-medium de W3.CSS. Quan l’usuari fa clic en aquest botó, s’executa una funció JavaScript (toggleMenu()) que mostra o amaga un menú vertical ocult per defecte (#mobileMenu) amb les mateixes opcions de navegació que el menú principal.
 
 ## 5. Cartografia.
 
