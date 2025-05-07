@@ -520,11 +520,11 @@ h2 {
   color: #333;                 /* Color fosc per al títol */
 }
 
-/* Estil per al paràgraf <p> */
+/* Estil per a la lletra del footer i proyectos increibles y conoce a nuestro equipo de expertos */
 p {
   text-align: center;          /* Centra el text */
-  font-size: 18px;             /* Mida de font mitjana per al text */
-  color: #555;                 /* Color de text més suau */
+  font-size: 15px;             /* Mida de font mitjana per al text */
+  color: #000;                 /* Color de text més suau */
   margin-top: 10px;            /* Afegim una mica d'espai superior */
   margin-bottom: 20px;         /* Afegim espai per sota per separar-lo de la resta de contingut */
 }
