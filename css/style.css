@@ -542,7 +542,7 @@ p {
 
 .social-icons a {
   margin: 0 10px;
-  color: #333;
+  color: #000;
   font-size: 24px;
   transition: color 0.3s;
 }
