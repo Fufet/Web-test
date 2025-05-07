@@ -3,38 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-
-  
   <link rel="stylesheet" href="css/style.css">
-
- 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
   <title>Página de Inicio</title>
+  <style>
+    #scrollBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+    }
+  </style>
 </head>
 <body class="w3-light-grey">
 
-  <!-- Header aplicat amb W3.CSS -->
-  <header class="w3-bar w3-blue-gray w3-padding w3-card-4">
-    <div class="w3-bar-item">
-      <a href="index.html">
-        <img src="img/nationalg.svg" alt="Logo" style="height: 50px;">
-      </a>
-    </div>
-    <nav class="w3-bar-item w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
-      <a href="membres.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
-      <a href="projecte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Proyectos</strong></a>
-      <a href="mapa.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
-      <a href="contacte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Contacto</strong></a>
-    </nav>
-  </header>
+  <!-- Barra de navegación responsive -->
+  <div class="w3-bar w3-white w3-card w3-large">
+    <a href="index.html" class="w3-bar-item w3-button logo">
+      <img src="img/nationalg.svg" alt="Logo" style="height:30px;">
+      <span style="font-weight: bold;">TARRACOGOL</span>
+    </a>
 
-  
+    <!-- Menú per a pantalles grans -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-grey">INICI</a>
+      <a href="membres.html" class="w3-bar-item w3-button">MEMBRES</a>
+      <a href="projecte.html" class="w3-bar-item w3-button">PROJECTE</a>
+      <a href="mapa.html" class="w3-bar-item w3-button">MAPA</a>
+      <a href="contacte.html" class="w3-bar-item w3-button">CONTACTE</a>
+    </div>
+
+    <!-- Botó menú mòbil -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">☰</a>
+  </div>
+
+  <!-- Menú mòbil ocult per defecte -->
+  <div id="mobileMenu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button w3-grey">INICI</a>
+    <a href="membres.html" class="w3-bar-item w3-button">MEMBRES</a>
+    <a href="projecte.html" class="w3-bar-item w3-button">PROJECTE</a>
+    <a href="mapa.html" class="w3-bar-item w3-button">MAPA</a>
+    <a href="contacte.html" class="w3-bar-item w3-button">CONTACTE</a>
+  </div>
+
+
+
+  <!-- Contingut principal -->
   <main class="w3-container w3-margin-top">
     <h2 class="w3-center w3-xxlarge w3-margin-top">Las rutas más emblemáticas del Camp de Tarragona</h2>
     <p class="w3-center">Descubre proyectos increíbles y conoce a nuestro equipo de expertos.</p>
@@ -52,18 +70,18 @@
       <img class="carousel-item w3-animate-fading" src="img/La teixeta.jpg" style="width:100%">
     </section>
 
-    <!-- Tarjetas inf -->
+    <!-- Secció d'informació -->
     <section class="w3-row-padding w3-margin-top">
       <div class="w3-half">
         <div class="w3-card w3-white w3-padding">
           <h3>Explora nuestros proyectos</h3>
-          <p>En esta web compartimos rutas en bicicleta por nuestro territorio, pensadas para todos los niveles y tipos de ciclistas. Desde recorridos tranquilos por el campo y las costas hasta rutas más desafiantes por montañas y senderos, cada ruta está diseñada para ofrecerte una experiencia única en contacto con la naturaleza. A través de nuestras rutas, podrás explorar paisajes impresionantes, descubrir rincones ocultos y disfrutar de la sensación de libertad que solo se experimenta sobre dos ruedas. Además, te proporcionamos toda la información necesaria para que tu aventura en bicicleta sea segura y placentera.</p>
+          <p>En esta web compartimos rutas en bicicleta por nuestro territorio, pensadas para todos los niveles y tipos de ciclistas...</p>
         </div>
       </div>
       <div class="w3-half">
         <div class="w3-card w3-white w3-padding">
           <h3>¿Quieres participar?</h3>
-          <p>Esta página está abierta a todos los ciclistas y amantes del territorio que buscan explorar y disfrutar de la belleza natural que nos rodea. Ya seas un ciclista experimentado o un aficionado que busca nuevas aventuras, aquí encontrarás rutas adaptadas a tus gustos y habilidades. Nos apasiona compartir el amor por el ciclismo y la naturaleza, y por eso ofrecemos una plataforma donde puedes descubrir nuevas rutas, conectarte con otros entusiastas y compartir tus experiencias. Únete a nuestra comunidad y sé parte de esta red de ciclistas que valoran la exploración sostenible y el respeto por el medio ambiente.</p>
+          <p>Esta página está abierta a todos los ciclistas y amantes del territorio que buscan explorar y disfrutar...</p>
         </div>
       </div>
     </section>
@@ -82,7 +100,7 @@
     <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Carrusel 2??? automático -->
+  <!-- Carrusel automàtic -->
   <script>
     let index = 0;
     carousel();
@@ -98,10 +116,8 @@
     }
   </script>
 
-  <!-- Boto Scroll -->
+  <!-- Botó Scroll cap amunt -->
   <button onclick="scrollToTop()" id="scrollBtn" class="w3-button w3-blue w3-xlarge w3-circle w3-hover-opacity">↑</button>
-
-  <!-- Mostrar el botó quan es fa scroll -->
   <script>
     window.onscroll = function() { toggleScrollBtn() };
 
@@ -113,15 +129,25 @@
       }
     }
 
-    // Funció per desplaçar-se cap a dalt
     function scrollToTop() {
-      document.body.scrollTop = 0; // Per Safari
-      document.documentElement.scrollTop = 0; // Per Chrome, Firefox, IE i Opera
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
   </script>
 
+<!-- JavaScript per al menú mòbil -->
+<script>
+  function toggleMenu() {
+    var x = document.getElementById("mobileMenu");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+  
 </body>
 </html>
 
-  
 
