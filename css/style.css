@@ -535,6 +535,32 @@ p {
 
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* o el color de la xarxa */
+}
+
+
+form .w3-input, form textarea {
+  transition: border-color 0.3s ease-in-out;
+}
+
+form .w3-input:focus, form textarea:focus {
+  border-color: #2196F3;
+}
+
+
 
 
 
