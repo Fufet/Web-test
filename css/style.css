@@ -489,7 +489,7 @@ section .w3-card, .w3-card {
     background-color: rgba(173, 216, 230, 0.9); 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    padding: 20px; 
+    padding: 19px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
