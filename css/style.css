@@ -513,20 +513,20 @@ section p {
 
 /* Estil per al títol <h2> */
 h2 {
-  text-align: center;          /* Centra el títol */
-  font-size: 20px;             /* Mida de font gran per al títol */
-  font-weight: bold;           /* Fa el títol en negreta */
-  margin-top: 40px;            /* Afegim espai superior per separar-lo del contingut anterior */
-  color: #333;                 /* Color fosc per al títol */
+  text-align: center;          
+  font-size: 25px;             
+  font-weight: bold;           
+  margin-top: 40px;           
+  color: #333;                
 }
 
 /* Estil per a la lletra del footer i proyectos increibles y conoce a nuestro equipo de expertos */
 p {
-  text-align: center;          /* Centra el text */
-  font-size: 15px;             /* Mida de font mitjana per al text */
-  color: #000;                 /* Color de text més suau */
-  margin-top: 10px;            /* Afegim una mica d'espai superior */
-  margin-bottom: 20px;         /* Afegim espai per sota per separar-lo de la resta de contingut */
+  text-align: center;          
+  font-size: 15px;             
+  color: #000;                 
+  margin-top: 10px;            
+  margin-bottom: 20px;         
 }
 
 
