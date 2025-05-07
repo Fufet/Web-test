@@ -41,8 +41,6 @@ Aglomeració de punts (Clustering): Com que alguns punts d’inici de ruta poden
 Altres:
 * He afegit una capa base amb imatge satèl·lit de Google Maps per millorar la visualització.
 * Cada recorregut està estilitzat amb un color diferent i inclou popups amb informació detallada (nom, descripció, enllaços...).
-* He fet servir la llibreria `Autolinker` per convertir enllaços de text en clicables dins els popups.
-* Per millorar l’organització i visibilitat dels elements, també he integrat `labelgun` i `rbush`.
 
 ## 6. Dificultats / Millores
 
@@ -55,9 +53,6 @@ Millores futures:
 - Afegir més contingut
 - Traducció multilingüe de la web
 - Optimització del rendiment i temps de càrrega, sobretot de les fotos
-
-
-
 
 
 ## 📌 Tecnologies Utilitzades
