@@ -10,7 +10,7 @@ Les dades i materials utilitzats a la web provenen de fonts oficials i fiables c
 - **Institut Cartogràfic i Geològic de Catalunya (ICGC)**
 - **Google maps**
 - **OpenStreetMap**
-- Wikiloc
+- **Wikiloc**
 - Textos redactats a partir d'informació contrastada 
 
 ## 3. Estructura de la Web
@@ -20,7 +20,7 @@ La web està estructurada en diverses seccions:
 - **Membres**: Secció dedicada a conèixer els membres que participen en el projecte
 - **Projectes**: Aquí es troben totes les rutes del territori català
 - **Mapa**: Mapa interactiu que mostra la informació annterior de manera visual i interactiva
-- **Contacte**: Formulari de contacte per proposari millores o comunicar incidències 
+- **Contacte**: Formulari de contacte per proposar millores o comunicar incidències 
 
 ## 4. Web Responsive
 
@@ -28,6 +28,9 @@ Per fer la web adaptativa a diferents dispositius (mòbil, tauleta, ordinador) s
 - **Media Queries en CSS** per canviar el disseny segons la mida de pantalla
 - **Unitats relatives (%, em, rem)** per evitar dissenys rígids
 - **Imatges amb resolució adequada** i amb propietats `max-width: 100%` per evitar desbordaments
+- Menú adaptat per a dispositius mòbils: Per fer que el menú de navegació funcioni correctament en dispositius petits com els mòbils, he afegit un botó tipus "hamburguesa" (☰) que apareix només en pantalles petites gràcies a les classes w3-hide-large i w3-hide-medium de W3.CSS.
+
+Quan l’usuari fa clic en aquest botó, s’executa una funció JavaScript (toggleMenu()) que mostra o amaga un menú vertical ocult per defecte (#mobileMenu) amb les mateixes opcions de navegació que el menú principal.
 
 ## 5. Cartografia.
 
