@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Framework W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-
   <!-- Estils personalitzats -->
   <link rel="stylesheet" href="css/style.css">
-
   <title>Miembros</title>
 </head>
 <body class="w3-light-grey">
@@ -18,45 +15,44 @@
   <header class="w3-bar w3-blue-gray w3-padding w3-card-4">
     <div class="w3-bar-item">
       <a href="index.html">
-        <img src="img/nationalg.svg" alt="Logo" style="height: 50px;">
+        <img src="img/nationalg.svg" alt="Logo" style="height:50px;">
       </a>
     </div>
-   <!-- Enllaços per escriptori -->
-  <nav class="w3-bar-item w3-right w3-hide-small w3-hide-medium" id="desktopMenu">
-    <a href="index.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
-    <a href="membres.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
-    <a href="projecte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Proyectos</strong></a>
-    <a href="mapa.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
-    <a href="contacte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Contacto</strong></a>
-  </nav>
-
-  <!-- Botó menú mòbil -->
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="toggleMenu()">☰</a>
-</header>
-
-<!-- Menú mòbil -->
-<div id="mobileMenu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
-  <a href="index.html" class="w3-bar-item w3-button">Inicio</a>
-  <a href="membres.html" class="w3-bar-item w3-button">Miembros</a>
-  <a href="projecte.html" class="w3-bar-item w3-button">Proyectos</a>
-  <a href="mapa.html" class="w3-bar-item w3-button">Mapa</a>
-  <a href="contacte.html" class="w3-bar-item w3-button">Contacto</a>
-</div>
+    <nav class="w3-bar-item w3-right w3-hide-small">
+      <a href="index.html"   class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
+      <a href="membres.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
+      <a href="projecte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Proyectos</strong></a>
+      <a href="mapa.html"     class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
+      <a href="contacte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Contacto</strong></a>
+    </nav>
+    <!-- Botón menú móvil -->
+    <a href="javascript:void(0)"
+       class="w3-bar-item w3-button w3-right w3-hide-large"
+       onclick="toggleMenu()"
+       aria-label="Abrir menú móvil">
+      ☰
+    </a>
   </header>
 
+  <!-- Menú móvil -->
+  <div id="mobileMenu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
+    <a href="index.html"   class="w3-bar-item w3-button">Inicio</a>
+    <a href="membres.html" class="w3-bar-item w3-button">Miembros</a>
+    <a href="projecte.html" class="w3-bar-item w3-button">Proyectos</a>
+    <a href="mapa.html"     class="w3-bar-item w3-button">Mapa</a>
+    <a href="contacte.html" class="w3-bar-item w3-button">Contacto</a>
+  </div>
 
-
-
-  <!-- Contingut principal -->
+  <!-- Contenido principal -->
   <main class="w3-container w3-center w3-margin-top">
     <h2 class="w3-xxlarge">Nuestro Equipo</h2>
     <p>Conoce a los miembros de nuestro equipo.</p>
 
-    <div class="w3-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+    <div class="w3-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:40px;">
 
       <!-- Diana -->
-      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
-        <img src="img/diana.jpg" alt="Diana Maria" style="width:100%" class="w3-round-large">
+      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width:250px;">
+        <img src="img/diana.jpg" alt="Diana Maria, coordinadora de campo" style="width:100%" class="w3-round-large">
         <div class="w3-container">
           <h3>Diana Maria</h3>
           <p class="w3-opacity">Trabajo de campo y coordinación</p>
@@ -68,8 +64,8 @@
       </div>
 
       <!-- Josep -->
-      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
-        <img src="img/Josep.jpg" alt="Josep Francesc" style="width:100%" class="w3-round-large">
+      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width:250px;">
+        <img src="img/Josep.jpg" alt="Josep Francesc, CEO" style="width:100%" class="w3-round-large">
         <div class="w3-container">
           <h3>Josep Francesc</h3>
           <p class="w3-opacity">CEO</p>
@@ -81,8 +77,8 @@
       </div>
 
       <!-- Dani -->
-      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
-        <img src="img/dani.jpg" alt="Dani Monfort" style="width:100%" class="w3-round-large">
+      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width:250px;">
+        <img src="img/dani.jpg" alt="Dani Monfort, apoyo técnico" style="width:100%" class="w3-round-large">
         <div class="w3-container">
           <h3>Dani Monfort</h3>
           <p class="w3-opacity">Empleado a tiempo parcial</p>
@@ -93,9 +89,9 @@
         </div>
       </div>
 
-       <!-- He de posar més -->
-      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
-        <img src="img/foto-dwt.jpg" alt="Diana Maria" style="width:100%" class="w3-round-large">
+      <!-- Jordi Wild -->
+      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width:250px;">
+        <img src="img/foto-dwt.jpg" alt="Jordi Wild, seguridad y prevención" style="width:100%" class="w3-round-large">
         <div class="w3-container">
           <h3>Jordi Wild</h3>
           <p class="w3-opacity">Seguridad y prevención</p>
@@ -106,9 +102,9 @@
         </div>
       </div>
 
-       <!-- He de posar més -->
-      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width: 250px;">
-        <img src="img/isabel-diaz-ayuso.jpg" alt="Diana Maria" style="width:100%" class="w3-round-large">
+      <!-- La Isa -->
+      <div class="w3-card w3-white w3-round-large team-card w3-hover-shadow" style="width:250px;">
+        <img src="img/isabel-diaz-ayuso.jpg" alt="Isabel Díaz Ayuso, marketing" style="width:100%" class="w3-round-large">
         <div class="w3-container">
           <h3>La Isa</h3>
           <p class="w3-opacity">Directora de marketing y relaciones públicas</p>
@@ -118,64 +114,51 @@
           </div>
         </div>
       </div>
-     
-
-     
 
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="w3-container w3-blue-gray w3-center w3-padding-16 footer">
+  <footer class="w3-container w3-blue-gray w3-center w3-padding-16">
     <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script desplegable -->
+  <!-- Botón para ir arriba -->
+  <button onclick="scrollToTop()" id="scrollBtn"
+          class="w3-button w3-blue w3-xlarge w3-circle w3-hover-opacity"
+          style="display:none; position:fixed; bottom:20px; right:20px; z-index:1000;">
+    ↑
+  </button>
+
+  <!-- Scripts -->
   <script>
-  const cards = document.querySelectorAll('.team-card');
-
-  cards.forEach(card => {
-    card.addEventListener('click', () => {
-      card.classList.toggle('active');
-    });
-  });
-</script>
-
-<button onclick="scrollToTop()" id="scrollBtn" class="w3-button w3-blue w3-xlarge w3-circle w3-hover-opacity">↑</button>
-
-  <!-- Mostrar el botó quan es fa scroll, falta arreglar -->
-<script>
-  window.onscroll = function() { toggleScrollBtn() };
-
-  function toggleScrollBtn() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      document.getElementById("scrollBtn").style.display = "block";
-    } else {
-      document.getElementById("scrollBtn").style.display = "none";
+    function toggleMenu() {
+      var menu = document.getElementById("mobileMenu");
+      if (menu.classList.contains("w3-show")) {
+        menu.classList.remove("w3-show");
+      } else {
+        menu.classList.add("w3-show");
+      }
     }
-  }
 
-  // Funció per desplaçar-se cap a dalt
-  function scrollToTop() {
-    document.body.scrollTop = 0; // Per Safari
-    document.documentElement.scrollTop = 0; // Per Chrome, Firefox, IE i Opera
-  }
-</script>
+    window.addEventListener('scroll', toggleScrollBtn);
 
-
-
-
-<!-- JavaScript per al menú mòbil -->
-<script>
-  function toggleMenu() {
-    var x = document.getElementById("mobileMenu");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else {
-      x.className = x.className.replace(" w3-show", "");
+    function toggleScrollBtn() {
+      var btn = document.getElementById("scrollBtn");
+      if (window.pageYOffset > 100) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
     }
-  }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 
 </body>
 </html>
+
+
 
