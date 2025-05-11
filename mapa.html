@@ -3,50 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  
+  <!-- Framework W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <!-- Estils personalitzats -->
   <link rel="stylesheet" href="css/style.css" />
-
-
+  <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
   <title>Mapa</title>
 </head>
 <body class="w3-light-grey">
 
-
+  <!-- Header -->
   <header class="w3-bar w3-blue-gray w3-padding w3-card-4">
     <div class="w3-bar-item">
       <a href="index.html">
         <img src="img/nationalg.svg" alt="Logo" style="height: 50px;">
       </a>
     </div>
+
+    <!-- Menú escritorio -->
     <nav class="w3-bar-item w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
-      <a href="membres.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
+      <a href="index.html"    class="w3-bar-item w3-button w3-hover-light-grey"><strong>Inicio</strong></a>
+      <a href="membres.html"  class="w3-bar-item w3-button w3-hover-light-grey"><strong>Miembros</strong></a>
       <a href="projecte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Proyectos</strong></a>
-      <a href="mapa.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
+      <a href="mapa.html"     class="w3-bar-item w3-button w3-hover-light-grey"><strong>Mapa</strong></a>
       <a href="contacte.html" class="w3-bar-item w3-button w3-hover-light-grey"><strong>Contacto</strong></a>
     </nav>
+
+    <!-- Botón menú móvil -->
+    <a href="javascript:void(0)"
+       class="w3-bar-item w3-button w3-right w3-hide-large"
+       onclick="toggleMenu()"
+       aria-label="Abrir menú móvil">
+      ☰
+    </a>
   </header>
 
-
-<main class="w3-container w3-margin-top">
-  <h2 class="w3-center w3-xxlarge">Mapa interactivo</h2>
-
-  <div class="w3-card w3-white w3-round-large w3-margin-top" style="overflow: hidden; position: relative;">
-    <iframe src="mapa/index.html" width="100%" height="600px" style="border:none;"></iframe>
+  <!-- Menú móvil -->
+  <div id="mobileMenu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
+    <a href="index.html"    class="w3-bar-item w3-button">Inicio</a>
+    <a href="membres.html"  class="w3-bar-item w3-button">Miembros</a>
+    <a href="projecte.html" class="w3-bar-item w3-button">Proyectos</a>
+    <a href="mapa.html"     class="w3-bar-item w3-button">Mapa</a>
+    <a href="contacte.html" class="w3-bar-item w3-button">Contacto</a>
   </div>
-</main> 
 
+  <!-- Contenido principal -->
+  <main class="w3-container w3-margin-top">
+    <h2 class="w3-center w3-xxlarge">Mapa interactivo</h2>
+    <div class="w3-card w3-white w3-round-large w3-margin-top" style="overflow:hidden; position:relative;">
+      <iframe src="mapa/index.html" width="100%" height="600px" style="border:none;"></iframe>
+    </div>
+  </main>
 
-<footer class="w3-container w3-blue-gray w3-center w3-padding-16 w3-margin-top">
-  <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-</footer>
+  <!-- Footer -->
+  <footer class="w3-container w3-blue-gray w3-center w3-padding-16 w3-margin-top">
+    <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
 
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("w3-show");
+    }
+  </script>
 
 </body>
 </html>
+
 
